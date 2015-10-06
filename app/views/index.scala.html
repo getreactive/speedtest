@@ -1,0 +1,139 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+<h1>Speed Test</h1>
+<script type="text/javascript">
+
+function data1(){
+
+ var jqxhr = $.getJSON( "assets/data/data1.json", function() {
+  console.log( "success" );
+})
+  .done(function() {
+    console.log( "second success" );
+  })
+  .fail(function() {
+    console.log( "error" );
+  })
+  .always(function() {
+    console.log( "complete" );
+  });
+
+// Perform other work here ...
+
+// Set another completion function for the request above
+jqxhr.complete(function() {
+  console.log( "second complete" );
+});
+
+}
+
+function data2(){
+
+ var jqxhr = $.getJSON( "assets/data/data2.json", function() {
+  console.log( "success" );
+})
+  .done(function() {
+    console.log( "second success" );
+  })
+  .fail(function() {
+    console.log( "error" );
+  })
+  .always(function() {
+    console.log( "complete" );
+  });
+
+// Perform other work here ...
+
+// Set another completion function for the request above
+jqxhr.complete(function() {
+  console.log( "second complete" );
+});
+
+}
+
+function data3(){
+
+ var jqxhr = $.getJSON( "assets/data/data3.json", function() {
+  console.log( "success" );
+})
+  .done(function() {
+    console.log( "second success" );
+  })
+  .fail(function() {
+    console.log( "error" );
+  })
+  .always(function() {
+    console.log( "complete" );
+  });
+
+// Perform other work here ...
+
+// Set another completion function for the request above
+jqxhr.complete(function() {
+  console.log( "second complete" );
+});
+
+}
+
+function data4(){
+
+ var jqxhr = $.getJSON( "assets/data/data4.json", function() {
+  console.log( "success" );
+})
+  .done(function() {
+    console.log( "second success" );
+  })
+  .fail(function() {
+    console.log( "error" );
+  })
+  .always(function() {
+    console.log( "complete" );
+  });
+
+// Perform other work here ...
+
+// Set another completion function for the request above
+jqxhr.complete(function() {
+  console.log( "second complete" );
+});
+
+}
+
+
+function data5(){
+
+ var jqxhr = $.getJSON( "assets/data/data5.json", function() {
+  console.log( "success" );
+})
+  .done(function() {
+    console.log( "second success" );
+  })
+  .fail(function() {
+    console.log( "error" );
+  })
+  .always(function() {
+    console.log( "complete" );
+  });
+
+// Perform other work here ...
+
+// Set another completion function for the request above
+jqxhr.complete(function() {
+  console.log( "second complete" );
+});
+
+}
+
+$( document ).ready(function() {
+    data1();
+    data2();
+    data3();
+    data4();
+    data5();
+});
+
+</script>
+
+}
